@@ -1,0 +1,271 @@
+{
+  "generatedAt": "2026-10-14T02:07:03.101Z",
+  "auditPassed": true,
+  "results": [
+    {
+      "route": "/",
+      "viewport": "mobile-narrow",
+      "status": 200,
+      "overflow": false,
+      "brokenImages": [],
+      "duplicateProductImages": []
+    },
+    {
+      "route": "/",
+      "viewport": "mobile-narrow",
+      "interaction": "cart + wishlist",
+      "cartCount": "1",
+      "wishlistCount": "1",
+      "wishlistVisible": false,
+      "wishlistCleared": true
+    },
+    {
+      "route": "/",
+      "viewport": "mobile-narrow",
+      "interaction": "newsletter",
+      "visible": true
+    },
+    {
+      "route": "/",
+      "viewport": "mobile-narrow",
+      "interaction": "mobile menu",
+      "open": true,
+      "closed": true
+    },
+    {
+      "route": "/shop",
+      "viewport": "mobile-narrow",
+      "status": 200,
+      "overflow": false,
+      "brokenImages": [],
+      "duplicateProductImages": []
+    },
+    {
+      "route": "/about",
+      "viewport": "mobile-narrow",
+      "status": 200,
+      "overflow": false,
+      "brokenImages": [],
+      "duplicateProductImages": []
+    },
+    {
+      "route": "/",
+      "viewport": "mobile",
+      "status": 200,
+      "overflow": false,
+      "brokenImages": [],
+      "duplicateProductImages": []
+    },
+    {
+      "route": "/",
+      "viewport": "mobile",
+      "interaction": "cart + wishlist",
+      "cartCount": "1",
+      "wishlistCount": "1",
+      "wishlistVisible": false,
+      "wishlistCleared": true
+    },
+    {
+      "route": "/",
+      "viewport": "mobile",
+      "interaction": "newsletter",
+      "visible": true
+    },
+    {
+      "route": "/",
+      "viewport": "mobile",
+      "interaction": "mobile menu",
+      "open": true,
+      "closed": true
+    },
+    {
+      "route": "/shop",
+      "viewport": "mobile",
+      "status": 200,
+      "overflow": false,
+      "brokenImages": [],
+      "duplicateProductImages": []
+    },
+    {
+      "route": "/about",
+      "viewport": "mobile",
+      "status": 200,
+      "overflow": false,
+      "brokenImages": [],
+      "duplicateProductImages": []
+    },
+    {
+      "route": "/",
+      "viewport": "tablet",
+      "status": 200,
+      "overflow": false,
+      "brokenImages": [],
+      "duplicateProductImages": []
+    },
+    {
+      "route": "/",
+      "viewport": "tablet",
+      "interaction": "cart + wishlist",
+      "cartCount": "1",
+      "wishlistCount": "1",
+      "wishlistVisible": true,
+      "wishlistCleared": true
+    },
+    {
+      "route": "/",
+      "viewport": "tablet",
+      "interaction": "newsletter",
+      "visible": true
+    },
+    {
+      "route": "/",
+      "viewport": "tablet",
+      "interaction": "mobile menu",
+      "open": true,
+      "closed": true
+    },
+    {
+      "route": "/shop",
+      "viewport": "tablet",
+      "status": 200,
+      "overflow": false,
+      "brokenImages": [],
+      "duplicateProductImages": []
+    },
+    {
+      "route": "/about",
+      "viewport": "tablet",
+      "status": 200,
+      "overflow": false,
+      "brokenImages": [],
+      "duplicateProductImages": []
+    },
+    {
+      "route": "/",
+      "viewport": "laptop",
+      "status": 200,
+      "overflow": false,
+      "brokenImages": [],
+      "duplicateProductImages": []
+    },
+    {
+      "route": "/",
+      "viewport": "laptop",
+      "interaction": "cart + wishlist",
+      "cartCount": "1",
+      "wishlistCount": "1",
+      "wishlistVisible": true,
+      "wishlistCleared": true
+    },
+    {
+      "route": "/",
+      "viewport": "laptop",
+      "interaction": "newsletter",
+      "visible": true
+    },
+    {
+      "route": "/shop",
+      "viewport": "laptop",
+      "status": 200,
+      "overflow": false,
+      "brokenImages": [],
+      "duplicateProductImages": []
+    },
+    {
+      "route": "/shop",
+      "viewport": "laptop",
+      "interaction": "filters + sorting + pagination",
+      "beautyVisible": 2,
+      "allVisible": 12,
+      "sizeFilterChecked": true,
+      "cleared": true,
+      "lowToHigh": "Silk Scarf",
+      "highToLow": "Minimal Watch",
+      "newest": "Classic Trench Coat",
+      "pageTwo": "page",
+      "pageThree": "page",
+      "pageTwoAgain": "page"
+    },
+    {
+      "route": "/about",
+      "viewport": "laptop",
+      "status": 200,
+      "overflow": false,
+      "brokenImages": [],
+      "duplicateProductImages": []
+    },
+    {
+      "route": "/",
+      "viewport": "desktop",
+      "status": 200,
+      "overflow": false,
+      "brokenImages": [],
+      "duplicateProductImages": []
+    },
+    {
+      "route": "/",
+      "viewport": "desktop",
+      "interaction": "cart + wishlist",
+      "cartCount": "1",
+      "wishlistCount": "1",
+      "wishlistVisible": true,
+      "wishlistCleared": true
+    },
+    {
+      "route": "/",
+      "viewport": "desktop",
+      "interaction": "newsletter",
+      "visible": true
+    },
+    {
+      "route": "/",
+      "viewport": "desktop",
+      "interaction": "navigation",
+      "navigationChecks": [
+        {
+          "path": "/shop",
+          "status": 200,
+          "landed": "/shop"
+        },
+        {
+          "path": "/about",
+          "status": 200,
+          "landed": "/about"
+        }
+      ]
+    },
+    {
+      "route": "/shop",
+      "viewport": "desktop",
+      "status": 200,
+      "overflow": false,
+      "brokenImages": [],
+      "duplicateProductImages": []
+    },
+    {
+      "route": "/shop",
+      "viewport": "desktop",
+      "interaction": "filters + sorting + pagination",
+      "beautyVisible": 2,
+      "allVisible": 12,
+      "sizeFilterChecked": true,
+      "cleared": true,
+      "lowToHigh": "Silk Scarf",
+      "highToLow": "Minimal Watch",
+      "newest": "Classic Trench Coat",
+      "pageTwo": "page",
+      "pageThree": "page",
+      "pageTwoAgain": "page"
+    },
+    {
+      "route": "/about",
+      "viewport": "desktop",
+      "status": 200,
+      "overflow": false,
+      "brokenImages": [],
+      "duplicateProductImages": []
+    }
+  ],
+  "consoleErrors": [],
+  "imageRequestFailures": []
+}
