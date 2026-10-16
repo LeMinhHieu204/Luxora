@@ -1,0 +1,4 @@
+@extends('layouts.app')
+@section('content')
+<main class="container" style="padding:4rem 0"><h1>Your cart</h1>@if(session('success'))<p>{{ session('success') }}</p>@endif @if($errors->any())<p>{{ $errors->first() }}</p>@endif @if($cart->items->isEmpty())<p>Your cart is empty.</p>@else<form method="post" action="{{ route('cart.update') }}">@csrf @method('PATCH')<ul>@foreach($cart->items as $item)<li>{{ $item->variant->product->name }} — ${{ number_format($item->variant->product->price_cents / 100, 2) }} <input type="hidden" name="items[{{ $loop->index }}][id]" value="{{ $item->id }}"><input type="number" name="items[{{ $loop->index }}][quantity]" value="{{ $item->quantity }}" min="0" max="99"></li>@endforeach</ul><button>Update cart</button></form><p>Total: ${{ number_format($total / 100, 2) }}</p><a href="{{ route('checkout') }}">Continue to checkout</a>@endif</main>
+@endsection

@@ -38,7 +38,7 @@
             <div class="header-actions">
                 <form class="search-form" action="{{ route('shop') }}" method="get">
                     <label class="sr-only" for="site-search">Search products</label>
-                    <input id="site-search" name="q" type="search" placeholder="Search products...">
+                    <input id="site-search" name="q" type="search" placeholder="Search products..." value="{{ request()->query('q', '') }}">
                     @include('luxora.icon', ['name' => 'search'])
                 </form>
                 <a class="icon-button account-button" href="#account" aria-label="Account">@include('luxora.icon', ['name' => 'user'])</a>

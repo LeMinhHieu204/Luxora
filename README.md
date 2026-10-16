@@ -71,7 +71,7 @@ The feature list below is based on the routes, Blade views, JavaScript, migratio
 | **Implemented** | Category filtering | The shop page can filter the rendered cards by category in the browser. |
 | **Implemented** | Sorting | The shop page supports newest/default order, price low-to-high and price high-to-low for the rendered cards. |
 | **Implemented** | Responsive UI | Header, navigation, hero, grids, filters, benefits, newsletter panel and footer have mobile, tablet and desktop layouts. |
-| **Partial** | Search | A search field submits `q` to `/shop`, but the server does not currently apply a search query to the catalog. |
+| **Implemented (preview)** | Search | The `/shop?q=` route filters the in-memory demo catalog by product name or category; persistence/search service remains out of scope. |
 | **Partial** | Cart and wishlist | Cart count, wishlist state and toast feedback are browser-only UI state; there is no persistence or cart route. |
 | **Partial** | Newsletter | The form performs client-side email validation and displays feedback; no subscription endpoint or mail integration is connected. |
 | **Partial** | Shop filters and pagination | Category filtering and sorting are wired. Size, color, availability and pagination controls are presentation/state interactions only. |
@@ -101,7 +101,7 @@ The feature list below is based on the routes, Blade views, JavaScript, migratio
 | ORM | Eloquent | A scaffolded `User` model is present; no commerce models have been added. |
 | Styling | Custom CSS and responsive media queries | Design tokens, editorial layout, responsive breakpoints and local asset presentation in `resources/css/`. |
 | Tooling | Vite 8.3.4, npm 10.9.2, Playwright 1.64.0 | Frontend bundling and automated browser capture/interaction checks. |
-| Testing | PHPUnit 12.5.38 | Two Laravel example tests currently pass; application-specific commerce tests are not present. |
+| Testing | PHPUnit 12.5.38 | Laravel tests cover the public route and preview search/no-match behavior; application-specific commerce tests are not present. |
 
 No build-passing, deployment-live or coverage badge is shown because the repository does not provide those external proofs.
 
@@ -230,7 +230,7 @@ The audit uses the installed Microsoft Edge executable through Playwright and wr
 - [x] Laravel 13 storefront shell with `/`, `/shop` and `/about` routes.
 - [x] Responsive editorial layout with local imagery and reusable Blade partials.
 - [x] Browser interactions for category filtering, sorting, cart count, wishlist state, newsletter feedback and mobile navigation.
-- [x] `php artisan test --compact` passes the two currently defined tests.
+- [x] `php artisan test --compact` passes the preview route and search tests.
 - [x] `npm run build` completes successfully.
 - [x] `npm run visual:qa` passes the current route, image, overflow and interaction checks across five viewport sizes.
 

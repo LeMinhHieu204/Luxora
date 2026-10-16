@@ -14,12 +14,15 @@
         <button class="clear-filters" type="button" data-clear-filters>Clear All Filters</button>
     </aside>
     <div class="shop-results">
-        <div class="shop-toolbar"><span>Showing <strong id="product-range">1–12</strong> of <strong id="product-total">48</strong> products</span><label>Sort by: <select aria-label="Sort products" data-sort-products><option value="newest">Newest First</option><option value="price-asc">Price: Low to High</option><option value="price-desc">Price: High to Low</option></select></label></div>
+        <div class="shop-toolbar"><span>Showing <strong id="product-range">{{ $resultCount ? '1–'.$resultCount : '0' }}</strong> of <strong id="product-total">{{ $catalogTotal }}</strong> products</span><label>Sort by: <select aria-label="Sort products" data-sort-products><option value="newest">Newest First</option><option value="price-asc">Price: Low to High</option><option value="price-desc">Price: High to Low</option></select></label></div>
         <div id="new-arrivals" class="product-grid product-grid-shop">
             @foreach($products as $product)
                 @include('luxora.product-card', ['product' => $product])
             @endforeach
         </div>
+        @if ($products->isEmpty())
+            <p class="empty-state" data-search-empty>No products match “{{ $query }}”. Try another search.</p>
+        @endif
         <section id="sale" class="promo-banner shop-promo"><div class="promo-copy"><p class="eyebrow">Limited time offer</p><h2>Up to 30% Off</h2><p>On selected styles. Elevate your wardrobe today.</p><a class="button button-dark" href="#new-arrivals">Shop the Sale @include('luxora.icon', ['name' => 'arrow'])</a></div><div class="promo-image" role="img" aria-label="Neutral seasonal clothing and accessories"></div></section>
     </div>
 </section>
